@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<link rel="stylesheet" href="file.css">
+<body>
+ <center><a href="#clickKaro" type="text">Go To Calculator</a></center>
+</body>
+
+<body>
+<center id="clickKaro" style="margin-top: 100em;">
+<div ng-app="myApp" ng-controller="myCtrl">
+<input id="number" type='number' placeholder="Enter 1st Number" ng-model="num1"/><br/>
+<strong><p id="sign" ng-bind="sign"></p></strong>
+<input id="number" type='number' placeholder="Enter 2nd Number" ng-model="num2"/><br/>
+<input id="button" type='button' value='sum' ng-click="sum()"/>
+<input id="button" type="button" value="mul" ng-click="mul()"/>
+<input id="button" type="button" value="div" ng-click="div()"/>
+<p id="result" ng-bind="result"></p>
+
+</div>
+</center>
+
+<script>
+var app = angular.module("myApp", []);
+
+app.controller("myCtrl", function($scope) 
+{
+
+
+$scope.sum=function()
+{
+$scope.result=$scope.num1+$scope.num2;
+$scope.sign="+";
+}
+$scope.mul=function()
+{
+$scope.result=$scope.num1*$scope.num2;
+$scope.sign="*";
+}
+$scope.div=function()
+{
+$scope.result=$scope.num1/$scope.num2;
+$scope.sign="/";
+}
+});
+</script>
+
+</body>
+</html>

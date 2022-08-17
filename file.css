@@ -1,0 +1,50 @@
+div {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 100;
+    margin-bottom: 150px;
+    box-shadow: 10px 10px 5px 12px red;
+    background-image: url("https://wallpaperaccess.com/full/2116674.jpg");
+  }
+
+  #number {
+	width: 125px;
+	height: 12px;
+	border: 4px solid purple;
+	padding: 10px;
+	font-family: Tahoma, sans-serif;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+input {
+    margin: 20px;
+}
+
+center {
+    margin-top: 10em;
+}
+
+#button {
+    background-color: pink;
+    border-radius: 50%;
+    padding: 15px;
+    border: 3px solid #4CAF50;
+  }
+
+#result{
+    background-color: yellow;
+    border: 3px solid green;
+  }
+
+  #sign {
+    color: white;
+    font-size: 23px;
+  }
+
+  a{
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    color: red;
+    font-size: 115px;
+  }
